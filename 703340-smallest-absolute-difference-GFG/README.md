@@ -1,0 +1,12 @@
+# [Smallest Absolute Difference](https://www.geeksforgeeks.org/problems/smallest-absolute-difference4320/1)
+## Medium
+Given an array of size n containing positive integers n and a number k,The absolute difference between values at indices i and j is |a[i] - a[j]|. There are n*(n-1)/2 such pairs and you have to&nbsp;print the kth smallest absolute difference among all these pairs.
+Examples :
+Input : n = 4, a[] = {1, 2, 3, 4},  = 3
+Output : 1 
+Explanation : The possible absolute differences are : {1, 2, 3, 1, 2, 1}. The 3rd smallest value among these is 1.
+Input : n = 2, a[] = {10, 10}, k = 1
+Output : 0
+Your Task:&nbsp;&nbsp;You don't need to read input or print anything. Your task is to complete the function kthDiff()&nbsp;which takes the array a[], its size n and an integer k as inputs and returns the kth smallest absolute difference among all these pairs.
+Expected Time Complexity: O( N. (Log(n))2 )Expected Auxiliary Space: O(Log(n))
+Constraints:1&lt;=n&lt;=1051&lt;=a[i]&lt;=1051 &lt;= k &lt;= n*(n-1)/2
