@@ -5,13 +5,23 @@ class Solution {
         int ans = Integer.MIN_VALUE;
         // code here
         
-            for(int i=2;i<=n;i++){
-               while(n%i == 0 && n>0){
-                   ans = Math.max(i,ans);
-                   n/=i;
-               }
-            }
+        while (n % 2 == 0) {
+            ans = 2;
+            n /= 2;
+        }
         
+        
+        for (int i = 3; i * i <= n; i += 2) {
+            while (n % i == 0) {
+                ans = Math.max(ans,i);
+                n /= i;
+            }
+        }
+
+        
+        if (n > 2)
+            ans = Math.max(ans,n);
+
         
         return ans;
     }
