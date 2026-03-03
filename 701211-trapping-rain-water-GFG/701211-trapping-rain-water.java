@@ -6,7 +6,7 @@ class Solution {
         
         int lmax = 0,rmax=0;
         
-        while(l<=r){
+        while(l<r){
             
             if(arr[l]<=arr[r]){
                 lmax = Math.max(lmax,arr[l]);
