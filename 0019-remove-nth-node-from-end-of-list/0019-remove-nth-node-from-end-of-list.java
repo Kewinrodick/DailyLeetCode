@@ -29,10 +29,8 @@ class Solution {
         int pos = k - n;
 
         if(pos == 0){
-            ListNode delNode = head;
-            head = head.next;
-            delNode.next = null;
-            return head;
+           
+            return head.next;
         }
 
         temp = head;
