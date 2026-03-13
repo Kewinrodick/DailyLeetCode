@@ -9,6 +9,7 @@ class Solution {
         int ps = 0;
         int res = 0;
         
+        map.put(0,1);
         for(int j=0;j<n;j++){
             
              ps +=arr[j];
@@ -16,10 +17,7 @@ class Solution {
             if(map.containsKey(ps-k)){
                 res+=map.get(ps-k);
             }
-            if(ps == k){
-                res+=1;
-            }
-            
+
             map.put(ps,map.getOrDefault(ps,0)+1);
             
         }
