@@ -5,11 +5,11 @@ class Solution {
         if(dp[i][j] !=  null) return dp[i][j];
         
         if(s1.charAt(i) == s2.charAt(j)){
-            return dp[i][j] = (int) 1+helper(s1,s2,i-1,j-1,dp);
+            return dp[i][j] =  1+helper(s1,s2,i-1,j-1,dp);
         }
         
         
-        return dp[i][j] = (int) Math.max(helper(s1,s2,i-1,j,dp) , helper(s1,s2,i,j-1,dp));
+        return dp[i][j] =  Math.max(helper(s1,s2,i-1,j,dp) , helper(s1,s2,i,j-1,dp));
         
     }
     static int lcs(String s1, String s2) {
